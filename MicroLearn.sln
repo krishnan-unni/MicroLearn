@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLearn.API.Products", "MicroLearn.API.Product\MicroLearn.API.Products.csproj", "{96626D7E-FEB9-43C9-9D3B-E115016A7665}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLearn.API.Orders", "MicroLearn.API.Orders\MicroLearn.API.Orders.csproj", "{BC5FA635-867F-4B2D-805C-A1D72820DEB8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLearn.API.Search", "MicroLearn.API.Search\MicroLearn.API.Search.csproj", "{FB1C5641-F05A-4BFE-9F2B-C89CFF0A8925}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLearn.API.Customers", "MicroLearn.API.Customers\MicroLearn.API.Customers.csproj", "{C82078F4-BEC3-4A2B-B596-35BA76C20366}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2ACCA1D6-1190-4D1D-8807-488C31465139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLearn.API.Products.Test", "MicroLearn.API.Products.Test\MicroLearn.API.Products.Test.csproj", "{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{96626D7E-FEB9-43C9-9D3B-E115016A7665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96626D7E-FEB9-43C9-9D3B-E115016A7665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96626D7E-FEB9-43C9-9D3B-E115016A7665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96626D7E-FEB9-43C9-9D3B-E115016A7665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC5FA635-867F-4B2D-805C-A1D72820DEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC5FA635-867F-4B2D-805C-A1D72820DEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC5FA635-867F-4B2D-805C-A1D72820DEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC5FA635-867F-4B2D-805C-A1D72820DEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB1C5641-F05A-4BFE-9F2B-C89CFF0A8925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB1C5641-F05A-4BFE-9F2B-C89CFF0A8925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB1C5641-F05A-4BFE-9F2B-C89CFF0A8925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB1C5641-F05A-4BFE-9F2B-C89CFF0A8925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C82078F4-BEC3-4A2B-B596-35BA76C20366}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C82078F4-BEC3-4A2B-B596-35BA76C20366}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C82078F4-BEC3-4A2B-B596-35BA76C20366}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C82078F4-BEC3-4A2B-B596-35BA76C20366}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891} = {2ACCA1D6-1190-4D1D-8807-488C31465139}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09550986-0699-4964-80CA-13518423270D}
+	EndGlobalSection
+EndGlobal
