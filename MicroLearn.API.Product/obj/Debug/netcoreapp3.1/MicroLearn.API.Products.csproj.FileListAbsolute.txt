@@ -100,10 +100,11 @@ D:\Projects\Github\MicroLearn\MicroLearn.API.Product\bin\Debug\netcoreapp3.1\zh-
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\staticwebassets\MicroLearn.API.Products.StaticWebAssets.Manifest.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\staticwebassets\MicroLearn.API.Products.StaticWebAssets.xml
-D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.AssemblyInfoInputs.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.AssemblyInfo.cs
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.RazorTargetAssemblyInfo.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.csproj.CopyComplete
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.dll
 D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.pdb
+D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.csprojAssemblyReference.cache
+D:\Projects\Github\MicroLearn\MicroLearn.API.Product\obj\Debug\netcoreapp3.1\MicroLearn.API.Products.MvcApplicationPartsAssemblyInfo.cache

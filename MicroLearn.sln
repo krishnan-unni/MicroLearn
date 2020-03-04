@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLearn.API.Customers", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2ACCA1D6-1190-4D1D-8807-488C31465139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroLearn.API.Products.Test", "MicroLearn.API.Products.Test\MicroLearn.API.Products.Test.csproj", "{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroLearn.API.Products.Test", "MicroLearn.API.Products.Test\MicroLearn.API.Products.Test.csproj", "{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{80821B1D-C08E-47DA-96D5-D734B6C6E03A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8797BCDD-4B63-4ACA-A5C7-FF239EB9F891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80821B1D-C08E-47DA-96D5-D734B6C6E03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80821B1D-C08E-47DA-96D5-D734B6C6E03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80821B1D-C08E-47DA-96D5-D734B6C6E03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80821B1D-C08E-47DA-96D5-D734B6C6E03A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

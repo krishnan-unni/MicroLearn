@@ -1,0 +1,142 @@
+services:
+  microlearn.api.customers:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Customers\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MicroLearn.API.Customers
+      target: base
+    container_name: MicroLearn.API.Customers
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: microlearnapicustomers:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "bin\Debug\netcoreapp3.1\MicroLearn.API.Customers.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - published: 6001
+      target: 80
+    volumes:
+    - C:\Users\krish\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\krish\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - D:\Projects\Github\MicroLearn\MicroLearn.API.Customers:C:\app:rw
+    - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
+    - D:\Projects\Github\MicroLearn:C:\src:rw
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\krish\.nuget\packages:c:\.nuget\packages:ro
+  microlearn.api.orders:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Orders\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MicroLearn.API.Orders
+      target: base
+    container_name: MicroLearn.API.Orders
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: microlearnapiorders:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "bin\Debug\netcoreapp3.1\MicroLearn.API.Orders.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - published: 6002
+      target: 80
+    volumes:
+    - C:\Users\krish\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\krish\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - D:\Projects\Github\MicroLearn\MicroLearn.API.Orders:C:\app:rw
+    - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
+    - D:\Projects\Github\MicroLearn:C:\src:rw
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\krish\.nuget\packages:c:\.nuget\packages:ro
+  microlearn.api.products:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Product\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MicroLearn.API.Products
+      target: base
+    container_name: MicroLearn.API.Products
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: microlearnapiproducts:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "bin\Debug\netcoreapp3.1\MicroLearn.API.Products.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - published: 6003
+      target: 80
+    volumes:
+    - C:\Users\krish\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\krish\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - D:\Projects\Github\MicroLearn\MicroLearn.API.Product:C:\app:rw
+    - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
+    - D:\Projects\Github\MicroLearn:C:\src:rw
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\krish\.nuget\packages:c:\.nuget\packages:ro
+  microlearn.api.search:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Search\Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: MicroLearn.API.Search
+      target: base
+    container_name: MicroLearn.API.Search
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus
+      /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: c:\.nuget\fallbackpackages
+      NUGET_PACKAGES: C:\.nuget\packages
+    image: microlearnapisearch:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath c:\.nuget\packages
+        --additionalProbingPath c:\.nuget\fallbackpackages  "bin\Debug\netcoreapp3.1\MicroLearn.API.Search.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: C:\remote_debugger\x64\utils\KillProcess.exe
+        dotnet.exe
+      com.microsoft.visualstudio.debuggee.program: '"C:\Program Files\dotnet\dotnet.exe"'
+      com.microsoft.visualstudio.debuggee.workingdirectory: C:\app
+    ports:
+    - published: 6004
+      target: 80
+    volumes:
+    - C:\Users\krish\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\krish\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - D:\Projects\Github\MicroLearn\MicroLearn.API.Search:C:\app:rw
+    - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
+    - D:\Projects\Github\MicroLearn:C:\src:rw
+    - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+    - C:\Users\krish\.nuget\packages:c:\.nuget\packages:ro
+version: '3.4'

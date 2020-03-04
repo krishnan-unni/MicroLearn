@@ -1,0 +1,44 @@
+services:
+  microlearn.api.customers:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Customers\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: microlearnapicustomers
+    ports:
+    - published: 6001
+      target: 80
+  microlearn.api.orders:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Orders\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: microlearnapiorders
+    ports:
+    - published: 6002
+      target: 80
+  microlearn.api.products:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Product\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: microlearnapiproducts
+    ports:
+    - published: 6003
+      target: 80
+  microlearn.api.search:
+    build:
+      context: D:\Projects\Github\MicroLearn
+      dockerfile: MicroLearn.API.Search\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      Services__Customers: http://microlearn.api.customers
+      Services__Products: http://microlearn.api.products
+    image: microlearnapisearch
+    ports:
+    - published: 6004
+      target: 80
+version: '3.4'

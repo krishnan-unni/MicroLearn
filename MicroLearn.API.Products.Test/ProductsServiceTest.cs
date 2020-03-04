@@ -39,7 +39,7 @@ namespace MicroLearn.API.Products.Test
         public async Task GetProductsReturnsProductUsingValidId()
         {
             var options = new DbContextOptionsBuilder<ProductsDbContext>()
-                .UseInMemoryDatabase(nameof(GetProductsReturnsAllProducts))
+                .UseInMemoryDatabase(nameof(GetProductsReturnsProductUsingValidId))
                 .Options;
             var dbContext = new ProductsDbContext(options);
 
@@ -62,7 +62,7 @@ namespace MicroLearn.API.Products.Test
         public async Task GetProductsReturnsProductUsingInValidId()
         {
             var options = new DbContextOptionsBuilder<ProductsDbContext>()
-                .UseInMemoryDatabase(nameof(GetProductsReturnsAllProducts))
+                .UseInMemoryDatabase(nameof(GetProductsReturnsProductUsingInValidId))
                 .Options;
             var dbContext = new ProductsDbContext(options);
 

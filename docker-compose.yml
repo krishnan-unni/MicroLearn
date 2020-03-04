@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  microlearn.api.customers:
+    image: ${DOCKER_REGISTRY-}microlearnapicustomers
+    build:
+      context: .
+      dockerfile: MicroLearn.API.Customers\Dockerfile
+
+  microlearn.api.orders:
+    image: ${DOCKER_REGISTRY-}microlearnapiorders
+    build:
+      context: .
+      dockerfile: MicroLearn.API.Orders\Dockerfile
+
+
+  microlearn.api.products:
+    image: ${DOCKER_REGISTRY-}microlearnapiproducts
+    build:
+      context: .
+      dockerfile: MicroLearn.API.Product\Dockerfile
+
+
+  microlearn.api.search:
+    image: ${DOCKER_REGISTRY-}microlearnapisearch
+    build:
+      context: .
+      dockerfile: MicroLearn.API.Search\Dockerfile
+

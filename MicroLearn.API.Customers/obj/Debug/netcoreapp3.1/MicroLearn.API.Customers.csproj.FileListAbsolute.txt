@@ -10,9 +10,9 @@ D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\bin\Debug\netcoreapp3.1\M
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.csprojAssemblyReference.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\staticwebassets\MicroLearn.API.Customers.StaticWebAssets.Manifest.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\staticwebassets\MicroLearn.API.Customers.StaticWebAssets.xml
-D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.MvcApplicationPartsAssemblyInfo.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.AssemblyInfoInputs.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.AssemblyInfo.cs
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.RazorTargetAssemblyInfo.cache
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.dll
 D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.pdb
+D:\Projects\Github\MicroLearn\MicroLearn.API.Customers\obj\Debug\netcoreapp3.1\MicroLearn.API.Customers.MvcApplicationPartsAssemblyInfo.cache
