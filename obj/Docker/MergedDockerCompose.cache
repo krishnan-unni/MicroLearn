@@ -35,6 +35,8 @@ services:
       dockerfile: MicroLearn.API.Search\Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      Services__Customers: http://microlearn.api.customers
+      Services__Products: http://microlearn.api.products
     image: microlearnapisearch
     ports:
     - published: 6004

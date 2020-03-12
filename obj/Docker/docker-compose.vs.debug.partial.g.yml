@@ -12,20 +12,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_microlearn.api.customers$
     volumes:
       - D:\Projects\Github\MicroLearn\MicroLearn.API.Customers:C:\app
       - D:\Projects\Github\MicroLearn:C:\src
-      - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
-      - C:\Users\krish\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+      - C:\Users\krish\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_microlearn.api.customers$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Customers.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_microlearn.api.customers$ \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Customers.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
@@ -40,20 +39,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_microlearn.api.orders$
     volumes:
       - D:\Projects\Github\MicroLearn\MicroLearn.API.Orders:C:\app
       - D:\Projects\Github\MicroLearn:C:\src
-      - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
-      - C:\Users\krish\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+      - C:\Users\krish\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_microlearn.api.orders$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Orders.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_microlearn.api.orders$ \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Orders.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
@@ -69,20 +67,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_microlearn.api.products$
     volumes:
       - D:\Projects\Github\MicroLearn\MicroLearn.API.Product:C:\app
       - D:\Projects\Github\MicroLearn:C:\src
-      - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
-      - C:\Users\krish\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+      - C:\Users\krish\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_microlearn.api.products$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Products.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_microlearn.api.products$ \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Products.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
@@ -98,20 +95,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - NUGET_PACKAGES=C:\.nuget\packages
-      - NUGET_FALLBACK_PACKAGES=c:\.nuget\fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_microlearn.api.search$
     volumes:
       - D:\Projects\Github\MicroLearn\MicroLearn.API.Search:C:\app
       - D:\Projects\Github\MicroLearn:C:\src
-      - C:\Users\krish\onecoremsvsmon\16.4.0067.0:C:\remote_debugger:ro
-      - C:\Users\krish\.nuget\packages\:c:\.nuget\packages:ro
-      - C:\Program Files\dotnet\sdk\NuGetFallbackFolder:c:\.nuget\fallbackpackages:ro
+      - C:\Users\krish\onecoremsvsmon:C:\remote_debugger:ro
+#$nuget_volume_mapping_microlearn.api.search$
       - ${APPDATA}/ASP.NET/Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
       - ${APPDATA}/Microsoft/UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
 
-    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 /LogDebuggeeOutputToStdOut
+    entrypoint: C:\\remote_debugger\\x64\\msvsmon.exe /noauth /anyuser /silent /nostatus /noclrwarn /nosecuritywarn /nofirewallwarn /nowowwarn /timeout:2147483646 
     labels:
       com.microsoft.visualstudio.debuggee.program: "\"C:\\Program Files\\dotnet\\dotnet.exe\""
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath c:\\.nuget\\packages --additionalProbingPath c:\\.nuget\\fallbackpackages  \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Search.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_microlearn.api.search$ \"bin\\Debug\\netcoreapp3.1\\MicroLearn.API.Search.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "C:\\app"
       com.microsoft.visualstudio.debuggee.killprogram: "C:\\remote_debugger\\x64\\utils\\KillProcess.exe dotnet.exe"
 
